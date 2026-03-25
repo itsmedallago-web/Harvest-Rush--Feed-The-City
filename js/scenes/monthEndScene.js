@@ -20,13 +20,7 @@ const MonthEndScene = (() => {
             const alreadyUnlocked = state.unlockedCrops || ['lettuce'];
             const remaining = ['corn', 'rice', 'wheat'].filter(c => !alreadyUnlocked.includes(c));
             // Add processed items options
-            const processedOptions = [];
-            if (alreadyUnlocked.includes('corn')) processedOptions.push('popcorn');
-            if (alreadyUnlocked.includes('wheat')) {
-                processedOptions.push('flour');
-                processedOptions.push('bread');
-            }
-            choices = [...remaining, ...processedOptions].slice(0, 3);
+            choices = [...remaining].slice(0, 3);
         } else {
             choices = [];
         }

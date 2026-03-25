@@ -329,7 +329,7 @@ const CutsceneScene = (() => {
             } else {
                 advanceFrame();
             }
-        } else if (!frame.duration) {
+        } else {
             advanceFrame();
         }
     }

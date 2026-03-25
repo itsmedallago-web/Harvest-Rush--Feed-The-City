@@ -158,7 +158,9 @@ const FarmScene = (() => {
             monthFood: food
         };
 
-        if (currentMonth >= 3) {
+        if (food < foodGoal) {
+            Game.changeScene('gameOver');
+        } else if (currentMonth >= 3) {
             // Demo ends
             Game.changeScene('cutscene_ending');
         } else {

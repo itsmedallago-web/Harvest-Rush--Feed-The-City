@@ -21,6 +21,7 @@ const Game = (() => {
         scenes['cutscene_intro'] = { ...CutsceneScene, initMode: 'intro' };
         scenes['cutscene_ending'] = { ...CutsceneScene, initMode: 'ending' };
         scenes['farm'] = FarmScene;
+        scenes['gameOver'] = GameOverScene;
         scenes['monthEnd'] = MonthEndScene;
         scenes['end'] = EndScene;
 
