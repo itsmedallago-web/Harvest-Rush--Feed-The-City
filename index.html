@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harvest Rush: Feed the City - A farming game inspired by Overcooked. Grow crops, process food, and feed the city!">
+    <title>Harvest Rush: Feed the City</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <!-- UI Overlays rendered via DOM for crisp text -->
+        <div id="ui-overlay" class="hidden"></div>
+    </div>
+
+    <!-- Utility modules -->
+    <script src="js/utils/sprite.js"></script>
+    <script src="js/utils/ui.js"></script>
+
+    <!-- Systems -->
+    <script src="js/audio.js"></script>
+    <script src="js/systems/crops.js"></script>
+    <script src="js/systems/economy.js"></script>
+    <script src="js/systems/equipment.js"></script>
+    <script src="js/systems/farm.js"></script>
+    <script src="js/systems/truck.js"></script>
+
+    <!-- Scenes -->
+    <script src="js/scenes/titleScreen.js"></script>
+    <script src="js/scenes/settings.js"></script>
+    <script src="js/scenes/cutscene.js"></script>
+    <script src="js/scenes/gameplay.js"></script>
+    <script src="js/scenes/cropSelect.js"></script>
+    <script src="js/scenes/monthEnd.js"></script>
+    <script src="js/scenes/demoEnd.js"></script>
+
+    <!-- Main entry -->
+    <script src="js/main.js"></script>
+</body>
+</html>
